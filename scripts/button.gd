@@ -11,7 +11,9 @@ func _ready():
 
 func _button_pressed():
 	get_tree().reload_current_scene()
+	print(_game_state.current_play_state)
 	_game_state.balls_remaining_by_player_id = [7, 7]
 	_game_state.current_player_id = 0
 	_game_state.ball_suit_by_player_id = [Enums.BallType.TBD, Enums.BallType.TBD]
 	_game_state.current_play_state = Enums.PlayState.AIMING
+	print(_game_state.current_play_state)

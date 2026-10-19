@@ -27,7 +27,7 @@ func _process(_delta):
 	_handle_shot_input()
 
 	_aim_container.position = _cue_ball.position
-#	_process_cheat_mode()
+	_process_cheat_mode()
 	
 func _input(event):
 	var mouse_motion = event as InputEventMouseMotion
